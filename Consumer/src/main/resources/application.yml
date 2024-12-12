@@ -1,0 +1,23 @@
+server:
+  port: 8081
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+  connection-timeout: 10s
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
